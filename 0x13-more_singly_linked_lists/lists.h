@@ -1,5 +1,5 @@
-#ifndef _ALADIN_
-#define _ALADIN_
+#ifndef _LISTS_
+#define _LISTS_
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -7,7 +7,8 @@
 * @n: integer
 * @next: points to the next node
 *
-* Description: singly linked list node structure //Aladin Bensassi
+* Description: singly linked list node structure
+* for Holberton project
 */
 typedef struct listint_s
 {
