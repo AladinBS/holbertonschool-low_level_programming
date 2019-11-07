@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
 #include <string.h>
-#include <math.h>
 #include <stdlib.h>
 /**
  * binary_to_uint - fn
@@ -10,24 +9,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int k = 0, i, j, n, p = 1, s;
-if (b == NULL)
+int s, i;
+unsigned int k = 0, p = 1;
+if (*b == '\0')
 return (0);
-n = strlen(b);
-for (i = 0; i < n; i++)
+for (s = 0; b[s];)
+s++;
+for (i = s - 1; i >= 0; i--)
 {
 if (b[i] != '0' && b[i] != '1')
-{
 return (0);
-}
-}
-s = atoi(b);
-for (i = n; i > 0; i--)
-{
-j = s % 10;
-k = k + j *p;
-s = s / 10;
-p *= 2;
+k = k + (b[i] - '0') * p;
+p = p * 2;
 }
 return (k);
 }
