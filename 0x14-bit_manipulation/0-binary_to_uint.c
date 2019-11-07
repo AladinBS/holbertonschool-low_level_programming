@@ -1,9 +1,8 @@
 #include "holberton.h"
 /**
-* binary_to_uint - converts a binary number to an
-* unsigned int.
+* binary_to_uint - converts a binary number
 * @b: binary.
-* Return: unsigned int.
+* Return: unsigned int. //Aladin Bensassi
 */
 unsigned int binary_to_uint(const char *b)
 {
