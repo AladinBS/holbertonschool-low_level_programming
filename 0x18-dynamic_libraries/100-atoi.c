@@ -1,23 +1,27 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * _atoi - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
+* _atoi - converts a string to an integer
+* @s: string to convert
+*
+* Return: value of integer
+*/
+
 int _atoi(char *s)
 {
-int c = 0;
-while (s[c] != '\0' && s[c] != ' ')
-{
-if (s[c] >= '0' && s[c] <= '9')
-{
-printf("%d", s[c] - '0');
-}
-c++;
+int i, n, signe = 1;
 
+i = n = 0;
+while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
+{
+if (*(s + i) == '-')
+signe *= -1;
+i++;
 }
-
-return (1);
+while ((*(s + i) >= '0') && (*(s + i) <= '9'))
+{
+n = n * 10 + signe * (*(s + i) - '0');
+i++;
+}
+return (n);
 }
