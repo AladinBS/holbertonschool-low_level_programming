@@ -2,6 +2,10 @@
 
 /**
  * linear_search - Function
+ * @array:array
+ * Return: The index
+ * @size: The size
+ * @value: The target
  */
 int linear_search(int *array, size_t size, int value)
 {
