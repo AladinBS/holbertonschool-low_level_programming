@@ -6,14 +6,12 @@
 #include <stdio.h>
 
 /**
- * struct listint_s - singly linked list
- *
+ * struct listint_s - singly
  * @n: Integer
- * @index: Index of the node in the list
- * @next: Pointer to the next node
+ * @index: Index
+ * @next: Pointer
  *
- * Description: singly linked list node structure
- * for Holberton project
+ * Description: singly
  */
 typedef struct listint_s
 {
@@ -23,15 +21,12 @@ typedef struct listint_s
 } listint_t;
 
 /**
- * struct skiplist_s - Singly linked list with an express lane
- *
+ * struct skiplist_s - Singly
  * @n: Integer
- * @index: Index of the node in the list
- * @next: Pointer to the next node
- * @express: Pointer to the next node in the express lane
- *
- * Description: singly linked list node structure with an express lane
- * for Holberton project
+ * @index: Index
+ * @next: Pointer
+ * @express: Pointer
+ * Description: singly
  */
 typedef struct skiplist_s
 {
